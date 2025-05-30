@@ -13,9 +13,6 @@
 #include "gpio.h"
 #endif
 
-// Test value
-uint8_t tx = 0xAA;
-
 #ifdef USE_WITHOUT_HAL_ST
 
 /**
@@ -56,11 +53,11 @@ void SPI1_Init(void)
   */
 void SPI1_SendCmd(uint8_t* tx)
 {
-	while (SPI_SR == ( SPI_SR_TXE << 0 )) ;
+	while (!(SPI_SR & SPI_SR_TXE)) ;
 
-	SPI_CR1 |= *tx;
+	SPI_DR |= *tx;
 
-	while (SPI_SR == ( SPI_SR_TXE << 1 )) ;
+	//while (SPI_SR & SPI_BSY) ;
 }
 
 /**
@@ -70,16 +67,18 @@ void SPI1_SendCmd(uint8_t* tx)
   */
 void SPI1_ReceiveCmd(uint8_t* rx)
 {
-	while (SPI_SR == ( SPI_SR_RXNE << 0 )) ;
+	//while (!(SPI_SR & SPI_SR_RXNE)) ;
 
-	if (SPI_CR1 == *rx) {
+	*rx = (uint8_t)(SPI_DR);
+
+	if (*rx & 0xAA) {
 		GPIO_SPI_CustomOpenLedWorker();
 	}
 	else {
 		GPIO_SPI_CustomOpenLedFailure();
 	}
 
-	while (SPI_SR == ( SPI_SR_RXNE << 1 )) ;
+	//while (SPI_SR & SPI_BSY) ;
 }
 
 /**
@@ -89,7 +88,7 @@ void SPI1_ReceiveCmd(uint8_t* rx)
   */
 void SPI1_SendCmd_Tester(void)
 {
-	SPI1_SendCmd(&tx);
+	//SPI1_SendCmd(tx);
 }
 
 /**
@@ -99,7 +98,7 @@ void SPI1_SendCmd_Tester(void)
   */
 void SPI1_ReceiveCmd_Tester(void)
 {
-	SPI1_ReceiveCmd(&tx);
+	//SPI1_ReceiveCmd(tx);
 }
 
 #endif // USE_WITHOUT_HAL_ST

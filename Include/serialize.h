@@ -296,6 +296,8 @@ Note: This bit is not used in I2S mode
 
 #define SPI_SR_RXNE						(1 << 0)
 
+#define SPI_DR						(*(volatile uint32_t *)(CUSTOM_SPI1_BASE + 0x0C))
+
 /* GPIO Pin */
 
 #define CUSTOM_GPIO_CRL_MODE4_0		(Output_mode_10MHz << (16U)) // (0x1UL = representa SPEED) - (MODE5_0 | MODE5_1) = 0b11 = 50Mhz

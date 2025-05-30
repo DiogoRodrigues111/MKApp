@@ -24,13 +24,15 @@
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
 
+uint8_t *tester = (uint8_t*)0xAA;
+
 int main(void)
 {
 	GPIO_CustomInit();
 	SPI1_Init();
 
 	while(1) {
-		SPI1_SendCmd_Tester();
-		SPI1_ReceiveCmd_Tester();
+		SPI1_SendCmd(tester);
+		SPI1_ReceiveCmd(tester);
 	}
 }
