@@ -51,13 +51,11 @@ void SPI1_Init(void)
   * @param None
   * @retval None
   */
-void SPI1_SendCmd(uint8_t* tx)
+void SPI1_SendCmd(char* tx)
 {
 	while (!(SPI_SR & SPI_SR_TXE)) ;
 
 	SPI_DR |= *tx;
-
-	//while (SPI_SR & SPI_BSY) ;
 }
 
 /**
@@ -65,9 +63,9 @@ void SPI1_SendCmd(uint8_t* tx)
   * @param None
   * @retval None
   */
-void SPI1_ReceiveCmd(uint8_t* rx)
+void SPI1_ReceiveCmd(char* rx)
 {
-	//while (!(SPI_SR & SPI_SR_RXNE)) ;
+	while (!(SPI_SR & SPI_SR_RXNE)) ;
 
 	*rx = (uint8_t)(SPI_DR);
 
@@ -77,8 +75,6 @@ void SPI1_ReceiveCmd(uint8_t* rx)
 	else {
 		GPIO_SPI_CustomOpenLedFailure();
 	}
-
-	//while (SPI_SR & SPI_BSY) ;
 }
 
 /**

@@ -20,10 +20,11 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/gpio.c" "CMakeFiles/app.dir/Sources/gpio.c.obj" "gcc" "CMakeFiles/app.dir/Sources/gpio.c.obj.d"
-  "C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/main.c" "CMakeFiles/app.dir/Sources/main.c.obj" "gcc" "CMakeFiles/app.dir/Sources/main.c.obj.d"
   "C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/spi.c" "CMakeFiles/app.dir/Sources/spi.c.obj" "gcc" "CMakeFiles/app.dir/Sources/spi.c.obj.d"
   "C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/syscalls.c" "CMakeFiles/app.dir/Sources/syscalls.c.obj" "gcc" "CMakeFiles/app.dir/Sources/syscalls.c.obj.d"
   "C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/sysmem.c" "CMakeFiles/app.dir/Sources/sysmem.c.obj" "gcc" "CMakeFiles/app.dir/Sources/sysmem.c.obj.d"
+  "C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/main.cc" "CMakeFiles/app.dir/Sources/main.cc.obj" "gcc" "CMakeFiles/app.dir/Sources/main.cc.obj.d"
+  "C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/usart.cc" "CMakeFiles/app.dir/Sources/usart.cc.obj" "gcc" "CMakeFiles/app.dir/Sources/usart.cc.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

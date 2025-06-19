@@ -3,6 +3,7 @@
 
 # compile ASM with C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-gcc.exe
 # compile C with C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-gcc.exe
+# compile CXX with C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-g++.exe
 ASM_DEFINES = 
 
 ASM_INCLUDES = -IC:/Developer/EmbeddedSystems/STMicroeletronics/app/Include
@@ -14,4 +15,10 @@ C_DEFINES =
 C_INCLUDES = -IC:/Developer/EmbeddedSystems/STMicroeletronics/app/Include
 
 C_FLAGS = -mcpu=Cortex-M3 -std=gnu11   --specs=nano.specs -mthumb -Wall -Werror -g
+
+CXX_DEFINES = 
+
+CXX_INCLUDES = -IC:/Developer/EmbeddedSystems/STMicroeletronics/app/Include
+
+CXX_FLAGS = -g
 

@@ -13,10 +13,8 @@ CMakeFiles/app.dir/Sources/gpio.c.obj: C:/Developer/EmbeddedSystems/STMicroeletr
   C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/sys/features.h \
   C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
-CMakeFiles/app.dir/Sources/main.c.obj: C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/main.c \
-  C:/Developer/EmbeddedSystems/STMicroeletronics/app/Include/VERSION.h \
-  C:/Developer/EmbeddedSystems/STMicroeletronics/app/Include/gpio.h \
-  C:/Developer/EmbeddedSystems/STMicroeletronics/app/Include/spi.h \
+CMakeFiles/app.dir/Sources/main.cc.obj: C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/main.cc \
+  C:/Developer/EmbeddedSystems/STMicroeletronics/app/Include/usart.h \
   C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/_newlib_version.h \
   C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/machine/_default_types.h \
   C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/stdint.h \
@@ -108,6 +106,9 @@ CMakeFiles/app.dir/Sources/sysmem.c.obj: C:/Developer/EmbeddedSystems/STMicroele
   C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
   C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
+CMakeFiles/app.dir/Sources/usart.cc.obj: C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/usart.cc \
+  C:/Developer/EmbeddedSystems/STMicroeletronics/app/Include/usart.h
+
 
 C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/time.h:
 
@@ -139,17 +140,23 @@ C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.external
 
 C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h:
 
-C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/machine/time.h:
+C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/sys/times.h:
 
-C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/main.c:
+C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/main.cc:
 
-C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h:
+C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/sysmem.c:
 
-C:/Developer/EmbeddedSystems/STMicroeletronics/app/Include/spi.h:
+C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/sys/stat.h:
+
+C:/Developer/EmbeddedSystems/STMicroeletronics/app/Include/usart.h:
 
 C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h:
 
 C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/spi.c:
+
+C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h:
+
+C:/Developer/EmbeddedSystems/STMicroeletronics/app/Include/spi.h:
 
 C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/syscalls.c:
 
@@ -185,6 +192,8 @@ C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.external
 
 C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/machine/ieeefp.h:
 
+C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/machine/time.h:
+
 C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/machine/types.h:
 
 C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/sys/config.h:
@@ -207,14 +216,10 @@ C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.external
 
 C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/sys/select.h:
 
-C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/sysmem.c:
-
-C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/sys/stat.h:
-
 C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/sys/stdio.h:
 
 C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/sys/time.h:
 
-C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/sys/times.h:
-
 C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/arm-none-eabi/include/sys/types.h:
+
+C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/usart.cc:

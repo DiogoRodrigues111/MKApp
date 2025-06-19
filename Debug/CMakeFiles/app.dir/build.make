@@ -85,19 +85,19 @@ CMakeFiles/app.dir/Startup/startup_stm32f103c6tx.s.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/app.dir/Startup/startup_stm32f103c6tx.s.s"
 	C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S C:/Developer/EmbeddedSystems/STMicroeletronics/app/Startup/startup_stm32f103c6tx.s -o CMakeFiles/app.dir/Startup/startup_stm32f103c6tx.s.s
 
-CMakeFiles/app.dir/Sources/main.c.obj: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/Sources/main.c.obj: C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/main.c
-CMakeFiles/app.dir/Sources/main.c.obj: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Developer/EmbeddedSystems/STMicroeletronics/app/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/app.dir/Sources/main.c.obj"
-	C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/app.dir/Sources/main.c.obj -MF CMakeFiles/app.dir/Sources/main.c.obj.d -o CMakeFiles/app.dir/Sources/main.c.obj -c C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/main.c
+CMakeFiles/app.dir/Sources/main.cc.obj: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/Sources/main.cc.obj: C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/main.cc
+CMakeFiles/app.dir/Sources/main.cc.obj: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Developer/EmbeddedSystems/STMicroeletronics/app/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/Sources/main.cc.obj"
+	C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/Sources/main.cc.obj -MF CMakeFiles/app.dir/Sources/main.cc.obj.d -o CMakeFiles/app.dir/Sources/main.cc.obj -c C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/main.cc
 
-CMakeFiles/app.dir/Sources/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/app.dir/Sources/main.c.i"
-	C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/main.c > CMakeFiles/app.dir/Sources/main.c.i
+CMakeFiles/app.dir/Sources/main.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/Sources/main.cc.i"
+	C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/main.cc > CMakeFiles/app.dir/Sources/main.cc.i
 
-CMakeFiles/app.dir/Sources/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/app.dir/Sources/main.c.s"
-	C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/main.c -o CMakeFiles/app.dir/Sources/main.c.s
+CMakeFiles/app.dir/Sources/main.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/Sources/main.cc.s"
+	C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/main.cc -o CMakeFiles/app.dir/Sources/main.cc.s
 
 CMakeFiles/app.dir/Sources/syscalls.c.obj: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/Sources/syscalls.c.obj: C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/syscalls.c
@@ -155,27 +155,43 @@ CMakeFiles/app.dir/Sources/spi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/app.dir/Sources/spi.c.s"
 	C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/spi.c -o CMakeFiles/app.dir/Sources/spi.c.s
 
+CMakeFiles/app.dir/Sources/usart.cc.obj: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/Sources/usart.cc.obj: C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/usart.cc
+CMakeFiles/app.dir/Sources/usart.cc.obj: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Developer/EmbeddedSystems/STMicroeletronics/app/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/app.dir/Sources/usart.cc.obj"
+	C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/Sources/usart.cc.obj -MF CMakeFiles/app.dir/Sources/usart.cc.obj.d -o CMakeFiles/app.dir/Sources/usart.cc.obj -c C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/usart.cc
+
+CMakeFiles/app.dir/Sources/usart.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/Sources/usart.cc.i"
+	C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/usart.cc > CMakeFiles/app.dir/Sources/usart.cc.i
+
+CMakeFiles/app.dir/Sources/usart.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/Sources/usart.cc.s"
+	C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Developer/EmbeddedSystems/STMicroeletronics/app/Sources/usart.cc -o CMakeFiles/app.dir/Sources/usart.cc.s
+
 # Object files for target app
 app_OBJECTS = \
 "CMakeFiles/app.dir/Startup/startup_stm32f103c6tx.s.obj" \
-"CMakeFiles/app.dir/Sources/main.c.obj" \
+"CMakeFiles/app.dir/Sources/main.cc.obj" \
 "CMakeFiles/app.dir/Sources/syscalls.c.obj" \
 "CMakeFiles/app.dir/Sources/sysmem.c.obj" \
 "CMakeFiles/app.dir/Sources/gpio.c.obj" \
-"CMakeFiles/app.dir/Sources/spi.c.obj"
+"CMakeFiles/app.dir/Sources/spi.c.obj" \
+"CMakeFiles/app.dir/Sources/usart.cc.obj"
 
 # External object files for target app
 app_EXTERNAL_OBJECTS =
 
 app.elf: CMakeFiles/app.dir/Startup/startup_stm32f103c6tx.s.obj
-app.elf: CMakeFiles/app.dir/Sources/main.c.obj
+app.elf: CMakeFiles/app.dir/Sources/main.cc.obj
 app.elf: CMakeFiles/app.dir/Sources/syscalls.c.obj
 app.elf: CMakeFiles/app.dir/Sources/sysmem.c.obj
 app.elf: CMakeFiles/app.dir/Sources/gpio.c.obj
 app.elf: CMakeFiles/app.dir/Sources/spi.c.obj
+app.elf: CMakeFiles/app.dir/Sources/usart.cc.obj
 app.elf: CMakeFiles/app.dir/build.make
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:/Developer/EmbeddedSystems/STMicroeletronics/app/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable app.elf"
-	C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-gcc.exe -mcpu=Cortex-M3 -std=gnu11   --specs=nano.specs -mthumb -Wall -Werror -g -TC:/Developer/EmbeddedSystems/STMicroeletronics/app/STM32F103C6TX_FLASH.ld --specs=nosys.specs -Wl,-Map=test.map -Wl,--gc-sections -static -Wl,--start-group -lc -lm -Wl,--end-group $(app_OBJECTS) $(app_EXTERNAL_OBJECTS) -o app.elf
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:/Developer/EmbeddedSystems/STMicroeletronics/app/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable app.elf"
+	C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-g++.exe -g -TC:/Developer/EmbeddedSystems/STMicroeletronics/app/STM32F103C6TX_FLASH.ld --specs=nosys.specs -Wl,-Map=test.map -Wl,--gc-sections -static -Wl,--start-group -lc -lm -Wl,--end-group $(app_OBJECTS) $(app_EXTERNAL_OBJECTS) -o app.elf
 	arm-none-eabi-size C:/Developer/EmbeddedSystems/STMicroeletronics/app/Debug/app.elf
 
 # Rule to build all files generated by this target.

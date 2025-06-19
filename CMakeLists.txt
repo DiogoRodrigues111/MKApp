@@ -47,12 +47,12 @@ set (RUNTIME_LIBRARY_SYSCALLS "--specs=nosys.specs")
 set (PROJECT_SOURCES
 	# LIST SOURCE FILES HERE
 	Startup/startup_stm32f103c6tx.s
-	Sources/main.c
+	Sources/main.cc
 	Sources/syscalls.c
 	Sources/sysmem.c
 	Sources/gpio.c
 	Sources/spi.c
-
+	Sources/usart.cc
 	)
 
 set (PROJECT_DEFINES

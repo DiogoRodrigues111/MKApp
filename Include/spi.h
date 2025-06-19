@@ -16,8 +16,8 @@
 /* Original functions */
 
 void SPI1_Init(void);
-void SPI1_SendCmd(uint8_t* tx);
-void SPI1_ReceiveCmd(uint8_t* rx);
+void SPI1_SendCmd(char* tx);
+void SPI1_ReceiveCmd(char* rx);
 
 /* Tester */
 

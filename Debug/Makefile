@@ -153,29 +153,29 @@ Sources/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Sources/gpio.c.s
 .PHONY : Sources/gpio.c.s
 
-Sources/main.obj: Sources/main.c.obj
+Sources/main.obj: Sources/main.cc.obj
 .PHONY : Sources/main.obj
 
 # target to build an object file
-Sources/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Sources/main.c.obj
-.PHONY : Sources/main.c.obj
+Sources/main.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Sources/main.cc.obj
+.PHONY : Sources/main.cc.obj
 
-Sources/main.i: Sources/main.c.i
+Sources/main.i: Sources/main.cc.i
 .PHONY : Sources/main.i
 
 # target to preprocess a source file
-Sources/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Sources/main.c.i
-.PHONY : Sources/main.c.i
+Sources/main.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Sources/main.cc.i
+.PHONY : Sources/main.cc.i
 
-Sources/main.s: Sources/main.c.s
+Sources/main.s: Sources/main.cc.s
 .PHONY : Sources/main.s
 
 # target to generate assembly for a file
-Sources/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Sources/main.c.s
-.PHONY : Sources/main.c.s
+Sources/main.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Sources/main.cc.s
+.PHONY : Sources/main.cc.s
 
 Sources/spi.obj: Sources/spi.c.obj
 .PHONY : Sources/spi.obj
@@ -249,6 +249,30 @@ Sources/sysmem.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Sources/sysmem.c.s
 .PHONY : Sources/sysmem.c.s
 
+Sources/usart.obj: Sources/usart.cc.obj
+.PHONY : Sources/usart.obj
+
+# target to build an object file
+Sources/usart.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Sources/usart.cc.obj
+.PHONY : Sources/usart.cc.obj
+
+Sources/usart.i: Sources/usart.cc.i
+.PHONY : Sources/usart.i
+
+# target to preprocess a source file
+Sources/usart.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Sources/usart.cc.i
+.PHONY : Sources/usart.cc.i
+
+Sources/usart.s: Sources/usart.cc.s
+.PHONY : Sources/usart.s
+
+# target to generate assembly for a file
+Sources/usart.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/Sources/usart.cc.s
+.PHONY : Sources/usart.cc.s
+
 Startup/startup_stm32f103c6tx.obj: Startup/startup_stm32f103c6tx.s.obj
 .PHONY : Startup/startup_stm32f103c6tx.obj
 
@@ -281,6 +305,9 @@ help:
 	@echo "... Sources/sysmem.obj"
 	@echo "... Sources/sysmem.i"
 	@echo "... Sources/sysmem.s"
+	@echo "... Sources/usart.obj"
+	@echo "... Sources/usart.i"
+	@echo "... Sources/usart.s"
 	@echo "... Startup/startup_stm32f103c6tx.obj"
 .PHONY : help
 

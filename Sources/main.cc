@@ -17,22 +17,17 @@
  */
 
 #include <stdint.h>
-#include "gpio.h"
-#include "spi.h"
+#include "usart.h"
 
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
 
-uint8_t *tester = (uint8_t*)0xAA;
 
+extern "C"
 int main(void)
 {
-	GPIO_CustomInit();
-	SPI1_Init();
-
 	while(1) {
-		SPI1_SendCmd(tester);
-		SPI1_ReceiveCmd(tester);
+
 	}
 }
