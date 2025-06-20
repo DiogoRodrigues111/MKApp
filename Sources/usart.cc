@@ -17,6 +17,7 @@ namespace PROTOCOLS_USART_SYSTEM {
  * Initialization USART Protocol
  */
 void USART_INFO_ABSTRATION_CXX::Init_USART() {
+	CUSTOM_RCC_APB2ENR |= CUSTOM_RCC_APB2ENR_IOPAEN | CUSTOM_RCC_APB2ENR_USART1EN;
 
 }
 
@@ -25,7 +26,7 @@ void USART_INFO_ABSTRATION_CXX::Init_USART() {
  */
 void USART_INFO_ABSTRATION_CXX::SendCmd(
 		USART_INFO_ABSTRATION_CXX addrSignature,
-		uint8_t addrValue)
+		void* addrValue)
 {
 
 }
@@ -35,7 +36,7 @@ void USART_INFO_ABSTRATION_CXX::SendCmd(
  */
 void USART_INFO_ABSTRATION_CXX::RecvCmd(
 		USART_INFO_ABSTRATION_CXX addrSignature,
-		uint8_t addrValue)
+		void* addrValue)
 {
 
 }

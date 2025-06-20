@@ -914,24 +914,86 @@ of the source clock frequency:
 
 /* GPIO Pin */
 
-#define CUSTOM_GPIO_CRL_MODE4_0		(Output_mode_10MHz << (16U)) // (0x1UL = representa SPEED) - (MODE5_0 | MODE5_1) = 0b11 = 50Mhz
+#define CUSTOM_GPIO_CRL_MODE0_0		(Output_mode_10MHz << (0U))
+#define CUSTOM_GPIO_CRL_MODE0_1		(Output_mode_10MHz << (1U))
+#define CUSTOM_GPIO_CRL_CNF0		(Alternate_function_output_open_drain << (2U))
+#define CUSTOM_GPIO_ODR_ODR0		(0x1UL << (0U))
+
+#define CUSTOM_GPIO_CRL_MODE1_0		(Output_mode_10MHz << (4U))
+#define CUSTOM_GPIO_CRL_MODE1_1		(Output_mode_10MHz << (5U))
+#define CUSTOM_GPIO_CRL_CNF1		(Alternate_function_output_open_drain << (6U))
+#define CUSTOM_GPIO_ODR_ODR1		(0x1UL << (1U))
+
+#define CUSTOM_GPIO_CRL_MODE2_0		(Output_mode_10MHz << (8U))
+#define CUSTOM_GPIO_CRL_MODE2_1		(Output_mode_10MHz << (9U))
+#define CUSTOM_GPIO_CRL_CNF2		(Alternate_function_output_open_drain << (10U))
+#define CUSTOM_GPIO_ODR_ODR2		(0x1UL << (2U))
+
+#define CUSTOM_GPIO_CRL_MODE3_0		(Output_mode_10MHz << (12U))
+#define CUSTOM_GPIO_CRL_MODE3_1		(Output_mode_10MHz << (13U))
+#define CUSTOM_GPIO_CRL_CNF3		(Alternate_function_output_open_drain << (14U))
+#define CUSTOM_GPIO_ODR_ODR3		(0x1UL << (3U))
+
+#define CUSTOM_GPIO_CRL_MODE4_0		(Output_mode_10MHz << (16U))
 #define CUSTOM_GPIO_CRL_MODE4_1		(Output_mode_10MHz << (17U))
-#define CUSTOM_GPIO_CRL_CNF4		(Alternate_function_output_open_drain << (18U)) // (0x3UL = MODE_PIN [PushPull, OpenDrain, etc..]) [SEMPRE É MELHOR (22U), pois é menor que (23U)] sempre prefira menor
-#define CUSTOM_GPIO_ODR_ODR4		(0x1UL << (4U)) 			// ENABLE
+#define CUSTOM_GPIO_CRL_CNF4		(Alternate_function_output_open_drain << (18U))
+#define CUSTOM_GPIO_ODR_ODR4		(0x1UL << (4U))
 
-#define CUSTOM_GPIO_CRL_MODE5_0		(Output_mode_10MHz << (20U)) // (0x1UL = representa SPEED) - (MODE5_0 | MODE5_1) = 0b11 = 50Mhz
-#define CUSTOM_GPIO_CRL_MODE5_1		(Output_mode_10MHz << (21U)) // (0x1UL << (21)) | (0x2UL << (20U)) //21 (0x1UL = SPEED)
-#define CUSTOM_GPIO_CRL_CNF5		(Alternate_function_output_open_drain << (22U)) // (0x3UL = MODE_PIN [PushPull, OpenDrain, etc..]) [SEMPRE É MELHOR (22U), pois é menor que (23U)] sempre prefira menor
-#define CUSTOM_GPIO_ODR_ODR5		(0x1UL << (5U)) 			// ENABLE
+#define CUSTOM_GPIO_CRL_MODE5_0		(Output_mode_10MHz << (20U))
+#define CUSTOM_GPIO_CRL_MODE5_1		(Output_mode_10MHz << (21U))
+#define CUSTOM_GPIO_CRL_CNF5		(Alternate_function_output_open_drain << (22U))
+#define CUSTOM_GPIO_ODR_ODR5		(0x1UL << (5U))
 
-#define CUSTOM_GPIO_CRL_MODE6_0		(Output_mode_10MHz << (24U)) // (0x1UL = representa SPEED) - (MODE5_0 | MODE5_1) = 0b11 = 50Mhz
+#define CUSTOM_GPIO_CRL_MODE6_0		(Output_mode_10MHz << (24U))
 #define CUSTOM_GPIO_CRL_MODE6_1		(Output_mode_10MHz << (25U))
-#define CUSTOM_GPIO_CRL_CNF6		(Alternate_function_output_open_drain << (26U)) // (0x3UL = MODE_PIN [PushPull, OpenDrain, etc..]) [SEMPRE É MELHOR (22U), pois é menor que (23U)] sempre prefira menor
-#define CUSTOM_GPIO_ODR_ODR6		(0x1UL << (6U)) 			// ENABLE
+#define CUSTOM_GPIO_CRL_CNF6		(Alternate_function_output_open_drain << (26U))
+#define CUSTOM_GPIO_ODR_ODR6		(0x1UL << (6U))
 
-#define CUSTOM_GPIO_CRL_MODE7_0		(Output_mode_10MHz << (28U)) // (0x1UL = representa SPEED) - (MODE5_0 | MODE5_1) = 0b11 = 50Mhz
+#define CUSTOM_GPIO_CRL_MODE7_0		(Output_mode_10MHz << (28U))
 #define CUSTOM_GPIO_CRL_MODE7_1		(Output_mode_10MHz << (29U))
-#define CUSTOM_GPIO_CRL_CNF7		(Alternate_function_output_open_drain << (30U)) // (0x3UL = MODE_PIN [PushPull, OpenDrain, etc..]) [SEMPRE É MELHOR (22U), pois é menor que (23U)] sempre prefira menor
-#define CUSTOM_GPIO_ODR_ODR7		(0x1UL << (7U)) 			// ENABLE
+#define CUSTOM_GPIO_CRL_CNF7		(Alternate_function_output_open_drain << (30U))
+#define CUSTOM_GPIO_ODR_ODR7		(0x1UL << (7U))
+
+// --- look all from the here!!! ---
+
+#define CUSTOM_GPIO_CRH_MODE8_0		(Output_mode_10MHz << (0U))
+#define CUSTOM_GPIO_CRH_MODE8_1		(Output_mode_10MHz << (1U))
+#define CUSTOM_GPIO_CRH_CNF8		(Alternate_function_output_open_drain << (3U))
+#define CUSTOM_GPIO_ODR_ODR8		(0x1UL << (8U))
+
+#define CUSTOM_GPIO_CRH_MODE9_0		(Output_mode_10MHz << (4U))
+#define CUSTOM_GPIO_CRH_MODE9_1		(Output_mode_10MHz << (5U))
+#define CUSTOM_GPIO_CRH_CNF9		(Alternate_function_output_open_drain << (7U))
+#define CUSTOM_GPIO_ODR_ODR9		(0x1UL << (9U))
+
+#define CUSTOM_GPIO_CRH_MODE10_0		(Output_mode_10MHz << (8U))
+#define CUSTOM_GPIO_CRH_MODE10_1		(Output_mode_10MHz << (9U))
+#define CUSTOM_GPIO_CRH_CNF10		(Alternate_function_output_open_drain << (11U))
+#define CUSTOM_GPIO_ODR_ODR10		(0x1UL << (10U))
+
+#define CUSTOM_GPIO_CRH_MODE11_0		(Output_mode_10MHz << (12U))
+#define CUSTOM_GPIO_CRH_MODE11_1		(Output_mode_10MHz << (13U))
+#define CUSTOM_GPIO_CRH_CNF11		(Alternate_function_output_open_drain << (15U))
+#define CUSTOM_GPIO_ODR_ODR11		(0x1UL << (11U))
+
+#define CUSTOM_GPIO_CRH_MODE12_0		(Output_mode_10MHz << (16U))
+#define CUSTOM_GPIO_CRH_MODE12_1		(Output_mode_10MHz << (17U))
+#define CUSTOM_GPIO_CRH_CNF12		(Alternate_function_output_open_drain << (19U))
+#define CUSTOM_GPIO_ODR_ODR12		(0x1UL << (12U))
+
+#define CUSTOM_GPIO_CRH_MODE13_0		(Output_mode_10MHz << (20U))
+#define CUSTOM_GPIO_CRH_MODE13_1		(Output_mode_10MHz << (21U))
+#define CUSTOM_GPIO_CRH_CNF13		(Alternate_function_output_open_drain << (23U))
+#define CUSTOM_GPIO_ODR_ODR13		(0x1UL << (13U))
+
+#define CUSTOM_GPIO_CRH_MODE14_0		(Output_mode_10MHz << (24U))
+#define CUSTOM_GPIO_CRH_MODE14_1		(Output_mode_10MHz << (25U))
+#define CUSTOM_GPIO_CRH_CNF14		(Alternate_function_output_open_drain << (27U))
+#define CUSTOM_GPIO_ODR_ODR14		(0x1UL << (14U))
+
+#define CUSTOM_GPIO_CRH_MODE15_0		(Output_mode_10MHz << (28U))
+#define CUSTOM_GPIO_CRH_MODE15_1		(Output_mode_10MHz << (29U))
+#define CUSTOM_GPIO_CRH_CNF15		(Alternate_function_output_open_drain << (31U))
+#define CUSTOM_GPIO_ODR_ODR15		(0x1UL << (15U))
 
 #endif /* INCLUDE_SERIALIZE_H_ */
